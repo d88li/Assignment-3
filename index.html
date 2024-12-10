@@ -20,12 +20,26 @@
 <style>
   #nav ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+    float: left;
+  }
+  a {
+    display: block;
+    padding: 8px;
   }
   
   ul a {
     color: #D00003;
   }
   
+  li a:hover {
+    font-style: bold;
+  }
   #nav li a {
     text-decoration: none;
     font-family: "Fira Mono";
@@ -74,6 +88,7 @@
   }
   
   #dividers {
+    width: 100%;
     position: relative;
     clear: both;
     font-family: "Fira Mono";
