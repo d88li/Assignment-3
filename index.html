@@ -56,9 +56,26 @@
     color: #D00003;
   }
   h1 {
+    /*
     font-family: VT323;
     font-size: 250px;
     font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    */
+    font-family: VT323, monospace; /* Or your preferred font */
+    font-size: clamp(20px, 10vw, 250px); /* Responsive font size */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.1; /* Adjust for spacing */
+    text-align: center;
+    margin: 0 auto; /* Center horizontally */
+    word-break: break-word; /* Ensure long words break */
+    overflow-wrap: break-word; /* Handle long text wrapping */
+  }
+  
+  h1 span {
+    font-size: clamp(30px, 12vw, 400px); /* Larger initials */
     font-weight: 400;
     line-height: normal;
   }
@@ -73,12 +90,15 @@
   }
 
   p {
+    width: 910px;
+    height: 325px;
+    flex-shrink: 0;
     text-align: center;
     /* sub heading 2 */
     font-family: "Fira Mono";
-    font-size: 36px;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
   }
 
@@ -89,6 +109,17 @@
     margin-bottom: 0px;
     margin-right: 5px;
     margin-left: 5px;
+  }
+  
+  #blurb {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 15%;
+    margin-top: 15%
+    
   }
 
   #dividers {
@@ -128,7 +159,15 @@
     margin: 0px;
     cursor: pointer;
     width: 25%;
+    float: left;
   }
+  
+  /* Clear floats (clearfix hack) */
+.btn:after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
   .icon {
     width: 24px; 
@@ -225,10 +264,11 @@
     <img src="Artboard 2.jpg" alt="portfolio header image">
     <h1><span style="font-family:ballet;font-size:400px;font-weight:400;line-height:normal">D</span>erica <span style="font-family:ballet;font-size:400px;font-weight:400;line-height:normal">L</span>i</h1>
   </div>
-
-  <p>
-    Hi! I'm Derica, an enthusiastic and adaptable designer who loves human-centered UI and graphic design. I'm eager to creatively collaborate, solve problems, and develop innovative strategies that connect with customers.
-  </p>
+  <div id="blurb">
+    <p>
+      Hi! I'm Derica, an enthusiastic and adaptable designer who loves human-centered UI and graphic design. I'm eager to creatively collaborate, solve problems, and develop innovative strategies that connect with customers.
+    </p>
+  </div>
 
   <div id="dividers">
 
