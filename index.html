@@ -18,38 +18,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Fira+Mono:wght@400;500;700&family=Prata&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=VT323&display=swap" rel="stylesheet">
   </head>
 <style>
-  #nav ul {
-    list-style-type: none;
+  
+  * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
-
-  li {
-    display: inline;
-    float: left;
+  
+  .nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4 em;
+    background: #F6F5E0;
   }
-
+  
   a {
-    display: block;
-    padding: 20px;
-  }
-
-  ul a {
-    color: #D00003;
-  }
-
-  li a:hover {
-    font-style: bold;
-  }
-  #nav li a {
     text-decoration: none;
     font-family: "Fira Mono";
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    color: #D00003;
+    padding: 8px;
   }
-
+  
+  .nav a:hover {
+    color: #E77F81;
+  }
 
   body {
     background-color: #F6F5E0;
@@ -63,23 +61,20 @@
     font-weight: 400;
     line-height: normal;
     */
-    font-family: VT323, monospace; /* Or your preferred font */
-    font-size: clamp(20px, 10vw, 250px); /* Responsive font size */
+    font-family: VT323, monospace;
+    font-size: 30px; 
     font-style: normal;
     font-weight: 400;
-    line-height: 1.1; /* Adjust for spacing */
+    line-height: 1.1; 
     text-align: center;
     margin: 0 auto; /* Center horizontally */
-    word-break: break-word; /* Ensure long words break */
-    overflow-wrap: break-word; /* Handle long text wrapping */
     margin-top: 0;
   }
   
-  h1 span {
-    font-size: clamp(30px, 12vw, 400px); /* Larger initials */
-    font-weight: 400;
-    line-height: normal;
+  h1:hover {
+    color: #E77F81;
   }
+  
   h2 {
     text-align: center;
     font-family: VT323;
@@ -101,27 +96,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-  }
-
-  img {
-    width: 572px;
-    height: auto;
-    margin-top: 90px;
-    margin-bottom: 0px;
-    margin-right: 5px;
-    margin-left: 5px;
-    align-self: center;
-  }
-  
-  #blurb {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    margin-right: 40%;
-    margin-left: 40%;
-    margin-bottom: 10%;
-    margin-top: 10%
-    
   }
 
   #dividers {
@@ -277,29 +251,22 @@
 
 <body>
 
-  <div id="header">
-    <div id="nav">
-      <ul>
-        <li><a href="/"><span style="font-family:ballet;font-size:36px">D</span></a></li>
-        <li><a href="/">Print</a></li>
-        <li><a href="/">Photography</a></li>
-        <li><a href="/">Web</a></li>
-        <li><a href="/">Info</a></li>
-      </ul>
+
+  <div class="nav">
+    <div class="items-left">
+      <a href="/">Print</a>
+      <a href="/">Photography</a>
+      <a href="/">Web</a>
     </div>
-    <!--
-    <img src="website graphic.jpg" alt="portfolio header image">
-    <h1><span style="font-family:ballet;font-size:400px;font-weight:400;line-height:normal">D</span>erica <span style="font-family:ballet;font-size:400px;font-weight:400;line-height:normal">L</span>i</h1>
-    -->
-    
+    <div class="item-center">
+      <h1>
+        <span style="font-family:ballet;font-size:40px;font-weight:400;line-height:normal">D</span>erica <span style="font-family:ballet;font-size:40px;font-weight:400;line-height:normal">L</span>i
+      </h1>
+    </div>
+    <div class="items-right">
+      <a href="/">Info</a>
+    </div>
   </div>
-  <!--
-  <div id="blurb">
-    <p>
-      Hi! I'm Derica, an enthusiastic and adaptable designer who loves human-centered UI and graphic design. I'm eager to creatively collaborate, solve problems, and develop innovative strategies that connect with customers.
-    </p>
-  </div>
-  -->
 
   <div id="dividers">
 
