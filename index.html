@@ -165,14 +165,33 @@
   }
   
   /* Clear floats (clearfix hack) */
-.btn:after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  .btn:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
   
   .btn:hover .content {
     padding-left: 15px;
+  }
+  
+  .btn:hover #print {
+    background-image: url("Print cover image.jpg");
+  }
+  
+  .btn:hover #photography {
+    background-image: url("IMG_1688.jpg");
+    background-size: auto 100%;
+  }
+  
+  .btn:hover #web {
+    background-image: url("web cover image.jpg");
+    background-size: auto 100%;
+  }
+  
+  .btn:hover #info {
+    background-image: url("Derica.JPG");
+    background-size: auto 100%;
   }
 
   .icon {
