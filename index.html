@@ -3,6 +3,14 @@
   <head>
     <title>Assignment 3: Portfolio Website</title>
     <!--created by Derica Li-->
+    
+    <!--
+    Code copied from: [https://heroicons.com/]
+    Author: [heroicons]
+    Name: [SVG icon]
+    Description: [arrow-top-right icon]
+    Date retrieved: [Dec 13 2024]
+    -->
     <meta charset="utf-8">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,13 +36,11 @@
   .nav {
     z-index: 10;
     position: fixed;
-    /* take away above if you don't like nav look*/
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 16px;
-    /*background: #F6F5E0;*/
   }
   
   .nav a {
@@ -57,20 +63,13 @@
     color: #D00003;
   }
   h1 {
-    /*
-    font-family: VT323;
-    font-size: 250px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    */
     font-family: VT323, monospace;
     font-size: 30px; 
     font-style: normal;
     font-weight: 400;
     line-height: 1.1; 
     text-align: center;
-    margin: 0 auto; /* Center horizontally */
+    margin: 0 auto; 
     margin-top: 0;
   }
   
@@ -93,7 +92,6 @@
     height: 325px;
     flex-shrink: 0;
     text-align: center;
-    /* sub heading 2 */
     font-family: "Fira Mono";
     font-size: 24px;
     font-style: normal;
@@ -147,17 +145,11 @@
     align-items: center; 
   }
   
-  /* Clear floats (clearfix hack) */
   .btn:after {
     content: "";
     clear: both;
     display: table;
   }
-  /*
-  .btn:hover .content {
-    padding-left: 15px;
-  }
-  */
   
   .btn:hover #print {
     background-image: url("new print cover.jpg");
@@ -183,12 +175,10 @@
     height: 24px; 
     display: block;
     margin-left: 8px;
-    /*align-self: flex-end;*/
   }
 
   .content {
-     display: flex;
-      /*align-self: flex-start;*/
+       display: flex;
       flex-direction: column;
       align-items: flex-end;
       justify-content: flex-end;
@@ -262,23 +252,11 @@
 
 
   <div class="nav">
-    <!--
-    <div class="items-left">
-      <a href="/">Print</a>
-      <a href="/">Photography</a>
-      <a href="/">Web</a>
-    </div>
--->
     <div class="item-left">
       <h1>
         <span style="font-family:ballet;font-size:40px;font-weight:400;line-height:normal">D</span>erica <span style="font-family:ballet;font-size:40px;font-weight:400;line-height:normal">L</span>i
       </h1>
     </div>
-    <!--
-    <div class="items-right">
-      <a href="https://d88li.github.io/contact-page/" target="_self">Info</a>
-    </div>
-    -->
   </div>
 
   <div id="dividers">
@@ -288,7 +266,7 @@
         <div class="content">
           <h2>1</h2>
           Print
-          <!-- SVG Icon -->
+          <!-- SVG Icon: citation at the top of the file -->
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
           </svg>
@@ -302,7 +280,7 @@
         <div class="content">
           <h2>2</h2>
           Photography
-          <!-- SVG Icon -->
+          <!-- SVG Icon: citation at the top of the file-->
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
           </svg>
@@ -315,7 +293,7 @@
         <div class="content">
           <h2>3</h2>
           Web
-          <!-- SVG Icon -->
+          <!-- SVG Icon: citation at the top of the file-->
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
           </svg>
@@ -328,7 +306,7 @@
         <div class="content">
           <h2>4</h2>
           Info
-          <!-- SVG Icon -->
+          <!-- SVG Icon: citation at the top of the file -->
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
           </svg>
